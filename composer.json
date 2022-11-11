@@ -1,0 +1,45 @@
+{
+    "name": "ujvilag/yii2-secure-headers",
+    "description": "Secure headers for your Yii2 app",
+    "keywords": ["yii2", "headers", "secure", "extension"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "support": {
+        "source": "https://code.fair.gov.hu/composer-packages/yii2-secure-headers"
+    },
+    "authors": [
+        {
+            "name": "Laszlo Magyar",
+            "email": "magyar.laszlo@ujvilag.gov.hu"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "*",
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ujvilag\\security\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ujvilag\\security\\tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    }
+}
